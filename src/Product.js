@@ -29,7 +29,7 @@ const Product = props => {
                         Price: ${props.product.cost}
                     </div>
                 </div>
-            <div class="ui bottom attached button" onClick={() => onClick()}>
+            <div class="ui bottom attached button" onClick={() => props.onAddToCart(props.product)}>
                 <i class="add icon"></i>
                     Add to Cart
             </div>
